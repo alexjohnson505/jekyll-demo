@@ -26,7 +26,7 @@ destination:  ./public
 plugins_dir:  ./src/_plugins
 layouts_dir:  ./src/_layouts
 data_dir:     ./src/_data
-includes_dir: ./_includes
+includes_dir: ./src/_includes
 collections:  null
 
 # Serving
