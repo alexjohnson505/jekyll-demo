@@ -25,7 +25,7 @@ source:       ./src
 destination:  ./public
 plugins_dir:  ./src/_plugins
 layouts_dir:  ./src/_layouts
-data_dir:     ./src/_data
+data_dir:     ./_data
 includes_dir: ./_includes
 collections:  null
 

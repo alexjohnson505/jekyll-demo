@@ -13,6 +13,18 @@ You can find the source code for the Jekyll new theme at: <a href="https://githu
 <br>
 <br>
 
+<h2>Demo Data:</h2>
+
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
 <h2>Demo Collection:</h2>
 
 {% for album in site.music %}
