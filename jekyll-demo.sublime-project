@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-      "folder_exclude_patterns": ["public", ".sass-cache"],
+      "folder_exclude_patterns": ["/public", ".sass-cache", "_site"],
 		}
 	]
 }
