@@ -33,4 +33,14 @@ collections:  null
 host:    127.0.0.1
 port:    4000
 
+collections:
+  music:
+    output: true
+    layout: music
 
+defaults:
+  -
+    scope:
+      collection: music
+    values:
+      layout: "music"
