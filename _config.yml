@@ -33,14 +33,25 @@ collections:  null
 host:    127.0.0.1
 port:    4000
 
+# Define Collection Data
 collections:
   music:
     output: true
     layout: music
 
+# Default Templates
 defaults:
   -
     scope:
-      collection: music
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Mr. Author"
+      permalink: /blog/:title/
+  -
+    scope:
+      type: "music"
     values:
       layout: "music"
+      permalink: /music/:title/
