@@ -48,10 +48,10 @@ defaults:
     values:
       layout: "post"
       author: "Mr. Author"
-      permalink: /blog/:title/
+      permalink: /blog/:title
   -
     scope:
       type: "music"
     values:
       layout: "music"
-      permalink: /music/:title/
+      permalink: /music/:title
