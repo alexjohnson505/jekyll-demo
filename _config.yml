@@ -21,10 +21,10 @@ markdown: kramdown
 permalink: /:title.html
 
 # Where things are
-source:       ./src
-destination:  ./public
-plugins_dir:  ./src/_plugins
-layouts_dir:  ./src/_layouts
+# source:       /
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
 data_dir:     ./_data
 includes_dir: ./_includes
 collections:  null
