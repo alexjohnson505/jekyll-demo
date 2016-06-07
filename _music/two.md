@@ -1,7 +1,7 @@
 ---
+title: Write an awesome description for your new site here
 collection: music
-title: "Write an awesome description for your new site here"
-artist: "Person II"
+artist: Person II
 ---
 
 # More info 

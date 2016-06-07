@@ -1,57 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Jekyll Demo Site
-email: demo@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jekyll-demo.com" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-
-permalink: /:title.html
-
-# Where things are
-# source:       /
-destination:  ./_site
-plugins_dir:  ./_plugins
-layouts_dir:  ./_layouts
-data_dir:     ./_data
-includes_dir: ./_includes
-collections:  null
-
-# Serving
-host:    127.0.0.1
-port:    4000
-
-# Define Collection Data
+timezone: UTC
 collections:
   music:
+    title: Music
     output: true
     layout: music
-
-# Default Templates
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Mr. Author"
-      permalink: /blog/:title
-  -
-    scope:
-      type: "music"
-    values:
-      layout: "music"
-      permalink: /music/:title
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    author: Mr. Author
+    permalink: "/blog/:title"
+- scope:
+    path: ''
+    type: music
+  values:
+    layout: music
+    permalink: "/music/:title"
+email: demo@example.com
+description: |
+  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+baseurl: ''
+url: http://jekyll-demo.com
+markdown: kramdown
+permalink: "/:title.html"
+destination: "./_site"
+plugins_dir: "./_plugins"
+layouts_dir: "./_layouts"
+data_dir: "./_data"
+includes_dir: "./_includes"
+host: 127.0.0.1
+port: 4000
